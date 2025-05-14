@@ -3,17 +3,17 @@
 
 int main()
 {
-    int v[20];
+    int v[4];
     int i;
-    int numPares;
+    int numPares = 0;
 
-    for(i = 0; i < 20; i++){
+    for(i = 0; i < 4; i++){
         printf("Digite o valor do %d\n", i+1);
-        scanf("%f", &v[i]);
-        if(v[i] % 2 = 0){
+        scanf("%i", &v[i]);
+        if(v[i] % 2 == 0){
             numPares++;
         }
     }
 
-    printf("A quantidade de numeros pares e: %.0f", numPares);
+    printf("A quantidade de numeros pares e: %i", numPares);
 }
